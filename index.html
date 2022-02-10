@@ -79,7 +79,7 @@
                 </svg>
               </button>
 
-              <form action="" class="registration-form">
+              <form class="registration-form">
                 <p class="modal-head">
                   Оставьте свои данные, мы вам перезвоним
                 </p>
@@ -88,8 +88,8 @@
                   <input
                     type="text"
                     name="user-name"
+                    size="100"
                     id="user-name"
-                    size="100%"
                     class="modal-input"
                     required
                   />
@@ -105,7 +105,7 @@
                     type="tel"
                     name="user-phone"
                     id="user-phone"
-                    size="100%"
+                    size="100"
                     required
                     class="modal-input"
                   />
@@ -121,7 +121,7 @@
                     type="email"
                     name="registration-email"
                     id="registration-email"
-                    size="100%"
+                    size="100"
                     required
                     class="modal-input"
                   />
@@ -613,7 +613,7 @@
             </ul>
           </div>
           <form class="modal-form">
-            <label class="mailing-head" name="user-email" id="user-email">
+            <label for="user-email" class="mailing-head">
               Подпишитесь на рассылку
             </label>
             <div class="form-container">
@@ -622,6 +622,7 @@
                 type="email"
                 name="user-email"
                 placeholder="E-mail"
+                id="user-email"
               />
 
               <button type="submit" class="mailing">
