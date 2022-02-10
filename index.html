@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -24,8 +27,8 @@
           <ul class="navigation-list">
             <li class="nav-left">
               <a class="navigation-link active-page" href="index.html"
-                >Студия </a
-              >
+                >Студия
+              </a>
             </li>
             <li class="nav-left">
               <a class="navigation-link" href="portfolio.html"> Портфолио</a>
@@ -65,15 +68,102 @@
             ЭФЕКТИВНЫЕ РЕШЕНИЯ<br />
             ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
-          <button class="btn" type="button" data-modal-open>Заказать услугу</button>
+          <button class="btn" type="button" data-modal-open>
+            Заказать услугу
+          </button>
           <div class="backdrop is-hidden" data-modal>
-            <div class="modal"> 
-             
-              <button class="close" data-modal-close> 
-                <svg class="close-icon" width="18" height="18" >
-                  <use href="./images/symbol-defs.svg#icon-close" ></use>
+            <div class="modal">
+              <button class="close" data-modal-close>
+                <svg class="close-icon" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
               </button>
+
+              <form action="" class="registration-form">
+                <p class="modal-head">
+                  Оставьте свои данные, мы вам перезвоним
+                </p>
+                <div class="modal-container">
+                  <label for="user-name" class="position-label">Имя</label>
+                  <input
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    size="100%"
+                    class="modal-input"
+                    required
+                  />
+                  <svg width="18" height="18" class="icon-input">
+                    <use href="./images/symbol-defs.svg#icon-person"></use>
+                  </svg>
+                </div>
+                <div class="modal-container">
+                  <label for="user-phone" class="position-label"
+                    >Телефон
+                  </label>
+                  <input
+                    type="tel"
+                    name="user-phone"
+                    id="user-phone"
+                    size="100%"
+                    required
+                    class="modal-input"
+                  />
+                  <svg width="18" height="18" class="icon-input">
+                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                </div>
+                <div class="modal-container">
+                  <label for="registration-email" class="position-label"
+                    >Почта</label
+                  >
+                  <input
+                    type="email"
+                    name="registration-email"
+                    id="registration-email"
+                    size="100%"
+                    required
+                    class="modal-input"
+                  />
+                  <svg width="18" height="18" class="icon-input">
+                    <use href="./images/symbol-defs.svg#icon-email"></use>
+                  </svg>
+                </div>
+
+                <label for="registration-coment" class="position-label">
+                  Коментарий
+                </label>
+                <textarea
+                  name="registration-coment"
+                  id="registration-coment"
+                  placeholder="Введите текст"
+                  class="area-coment"
+                ></textarea>
+                <div class="agreement">
+                  <input
+                    type="checkbox"
+                    name="agreement"
+                    id="agreement"
+                    class="agreement-checkbox"
+                    required
+                  />
+
+                  <label
+                    for="agreement"
+                    class="agreement-label agreement-cheked"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a href="" class="terms"> Условия договора</a>
+                  </label>
+                  <svg class="check">
+                    <use
+                      href="./images/symbol-defs.svg#icon-check"
+                      width="16"
+                      height="15"
+                    ></use>
+                  </svg>
+                </div>
+                <input type="submit" value="Отправить" class="btn-submit" />
+              </form>
             </div>
           </div>
         </div>
@@ -175,37 +265,53 @@
                 <p class="team-position" lang="en">Product Designer</p>
                 <ul class="icon-list">
                   <li class="icon-item">
-                    <a href="https://www.instagram.com/" class="button-icon button-active">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="button-icon button-active"
+                    >
                       <svg class="svg-icon" width="20px" height="20px">
-                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="icon-item">
-                    <a href="https://twitter.com/" class="button-icon button-active">
+                    <a
+                      href="https://twitter.com/"
+                      class="button-icon button-active"
+                    >
                       <svg class="svg-icon" width="20px" height="20px">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="icon-item">
-                    <a href="https://www.facebook.com/" class="button-icon button-active">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="button-icon button-active"
+                    >
                       <svg class="svg-icon" width="20px" height="20px">
-                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="icon-item">
-                    <a href="https://linkedin.com/" class="button-icon button-active">
+                    <a
+                      href="https://linkedin.com/"
+                      class="button-icon button-active"
+                    >
                       <svg class="svg-icon" width="20px" height="20px">
-                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                 </ul>
               </div>
-
-             
             </li>
 
             <li class="item-list">
@@ -215,36 +321,53 @@
                 <p class="team-position" lang="en">Frontend Developer</p>
                 <ul class="icon-list">
                   <li class="icon-item">
-                    <a href="https://www.instagram.com/" class="button-icon button-active">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="button-icon button-active"
+                    >
                       <svg class="svg-icon" width="20px" height="20px">
-                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="icon-item">
-                    <a href="https://twitter.com/" class="button-icon button-active">
+                    <a
+                      href="https://twitter.com/"
+                      class="button-icon button-active"
+                    >
                       <svg class="svg-icon" width="20px" height="20px">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="icon-item">
-                    <a href="https://www.facebook.com/" class="button-icon button-active">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="button-icon button-active"
+                    >
                       <svg class="svg-icon" width="20px" height="20px">
-                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="icon-item">
-                    <a href="https://linkedin.com/" class="button-icon button-active">
+                    <a
+                      href="https://linkedin.com/"
+                      class="button-icon button-active"
+                    >
                       <svg class="svg-icon" width="20px" height="20px">
-                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                 </ul>
               </div>
-              
             </li>
 
             <li class="item-list">
@@ -254,36 +377,53 @@
                 <p class="team-position" lang="en">Marketing</p>
                 <ul class="icon-list">
                   <li class="icon-item">
-                    <a href="https://www.instagram.com/" class="button-icon button-active">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="button-icon button-active"
+                    >
                       <svg class="svg-icon" width="20px" height="20px">
-                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="icon-item">
-                    <a href="https://twitter.com/" class="button-icon button-active">
+                    <a
+                      href="https://twitter.com/"
+                      class="button-icon button-active"
+                    >
                       <svg class="svg-icon" width="20px" height="20px">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="icon-item">
-                    <a href="https://www.facebook.com/" class="button-icon button-active">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="button-icon button-active"
+                    >
                       <svg class="svg-icon" width="20px" height="20px">
-                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="icon-item">
-                    <a href="https://linkedin.com/" class="button-icon button-active">
+                    <a
+                      href="https://linkedin.com/"
+                      class="button-icon button-active"
+                    >
                       <svg class="svg-icon" width="20px" height="20px">
-                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                 </ul>
               </div>
-              
             </li>
 
             <li class="item-list">
@@ -293,36 +433,53 @@
                 <p class="team-position" lang="en">UI Designer</p>
                 <ul class="icon-list">
                   <li class="icon-item">
-                    <a href="https://www.instagram.com/" class="button-icon button-active">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="button-icon button-active"
+                    >
                       <svg class="svg-icon" width="20px" height="20px">
-                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="icon-item">
-                    <a href="https://twitter.com/" class="button-icon button-active">
+                    <a
+                      href="https://twitter.com/"
+                      class="button-icon button-active"
+                    >
                       <svg class="svg-icon" width="20px" height="20px">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="icon-item">
-                    <a href="https://www.facebook.com/" class="button-icon button-active">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="button-icon button-active"
+                    >
                       <svg class="svg-icon" width="20px" height="20px">
-                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="icon-item">
-                    <a href="https://linkedin.com/" class="button-icon button-active">
+                    <a
+                      href="https://linkedin.com/"
+                      class="button-icon button-active"
+                    >
                       <svg class="svg-icon" width="20px" height="20px">
-                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                 </ul>
               </div>
-             
             </li>
           </ul>
         </div>
@@ -333,21 +490,21 @@
           <h2 class="spec-head">Постоянные клиенты</h2>
           <ul class="client-list">
             <li class="client-item">
-              <a  href="" class="client-link">
+              <a href="" class="client-link">
                 <svg class="svg-client" width="106px" height="60px">
                   <use href="./images/symbol-defs.svg#icon-group"></use>
                 </svg>
               </a>
             </li>
             <li class="client-item">
-              <a href=""  class="client-link">
+              <a href="" class="client-link">
                 <svg class="svg-client" width="106px" height="60px">
                   <use href="./images/symbol-defs.svg#icon-group-1"></use>
                 </svg>
               </a>
             </li>
             <li class="client-item">
-              <a href=""  class="client-link">
+              <a href="" class="client-link">
                 <svg class="svg-client" width="106px" height="60px">
                   <use href="./images/symbol-defs.svg#icon-group-2"></use>
                 </svg>
@@ -361,7 +518,7 @@
               </a>
             </li>
             <li class="client-item">
-              <a href=""  class="client-link">
+              <a href="" class="client-link">
                 <svg class="svg-client" width="106px" height="60px">
                   <use href="./images/symbol-defs.svg#icon-group-4"></use>
                 </svg>
@@ -385,7 +542,7 @@
       <div class="container">
         <div class="container-foot">
           <div>
-            <a href=""  class="logo-foot"
+            <a href="" class="logo-foot"
               >Web<span class="logo-studio-foot">Studio</span></a
             >
             <address class="foot-adress">
@@ -414,28 +571,40 @@
             <h3 class="head-social">Присоеденяйтесь</h3>
             <ul class="social-list">
               <li class="social-item">
-                <a href="https://www.instagram.com/"  class="button-social button-social-active">
+                <a
+                  href="https://www.instagram.com/"
+                  class="button-social button-social-active"
+                >
                   <svg class="social-icon">
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a href="https://twitter.com/" class="button-social button-social-active">
+                <a
+                  href="https://twitter.com/"
+                  class="button-social button-social-active"
+                >
                   <svg class="social-icon">
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a href="https://www.facebook.com/"  class="button-social button-social-active">
+                <a
+                  href="https://www.facebook.com/"
+                  class="button-social button-social-active"
+                >
                   <svg class="social-icon">
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a href=https://www.linkedin.com/" class="button-social button-social-active">
+                <a
+                  href="https://www.linkedin.com/"
+                  class="button-social button-social-active"
+                >
                   <svg class="social-icon">
                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
@@ -443,6 +612,30 @@
               </li>
             </ul>
           </div>
+          <form class="modal-form">
+            <label class="mailing-head" name="user-email" id="user-email">
+              Подпишитесь на рассылку
+            </label>
+            <div class="form-container">
+              <input
+                class="mailing-text"
+                type="email"
+                name="user-email"
+                placeholder="E-mail"
+              />
+
+              <button type="submit" class="mailing">
+                Подписаться
+                <svg class="icon-send">
+                  <use
+                    href="./images/symbol-defs.svg#icon-send"
+                    width="24"
+                    height="24"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
